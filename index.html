@@ -212,15 +212,18 @@
             }
 
             .project {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr !important;
+                gap: 30px;
             }
 
-            .project:nth-child(even) .project-media {
-                order: 1;
+            .project:nth-child(even) .project-media,
+            .project .project-media {
+                order: 1 !important;
             }
 
-            .project:nth-child(even) .project-info {
-                order: 2;
+            .project:nth-child(even) .project-info,
+            .project .project-info {
+                order: 2 !important;
             }
 
             nav {
@@ -229,6 +232,14 @@
 
             .projects-section {
                 padding: 100px 30px 30px;
+            }
+
+            .section-title {
+                font-size: 36px;
+            }
+
+            .project-info h3 {
+                font-size: 24px;
             }
         }
 
